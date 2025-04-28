@@ -320,5 +320,34 @@ git remote -v
 git add .
 git commit -m "[docs]:최초등록"
 
-git push -u origin main
+git push (-u) origin main
+```
+
+- 소스 업로드를 `push` 한다.
+- `-u` 디폴트값으로 설정해버림. 다음 등록 시에 git push 만 적으면 자동으로 등록한다. (다른 브랜치들이 많으면 별로 추천하지않는 방법)
+
+### 4.4. 원격 저장소 관리하기
+
+- 목록보기
+
+```bash
+git remote -v
+```
+
+- 삭제하기
+
+```bash
+git remote remove 원격이름
+```
+
+- 추가하기
+
+```bash
+git remote add 원격이름 http주소
+```
+
+- 이름바꾸기
+
+```bash
+git remote rename 옛이름 새이름
 ```
