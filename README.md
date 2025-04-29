@@ -407,3 +407,5 @@ git add .
 git commit -m "작업내용요약기록"
 git push origin 브랜치명
 ```
+
+서울서 작업했음 ^^v
