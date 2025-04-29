@@ -369,8 +369,28 @@ git remote rename 옛이름 새이름
  git push origin main
 ```
 
-## 5. GitHub의 소스를 다운로드 받아서 작업하는 법
+## 5. GitHub의 소스를 복사(clone)해서 작업하는 법
 
 - 깃허브 주소를 주의해야한다.
 - 코드 소스 기준은 `https`로 진행
 - 코드 소스 기준이 `ssh` 면 인증을 다시 처리하는 과정 필요.
+
+### 5.1. 실습
+
+- 상황가정
+  └ (1) 서울로 출장을 PC없이 갔다
+  └ (2) 서울 사무소에 PC를 지급 받았다
+  └ (3) PC에 환경 설정 진행했다 (VSCode, Git)
+
+- /student/byr/`test폴더`생성
+- github 사이트에 프로젝트를 `clone`한다
+- github 사이트에 Repository 를 `clone` 한다
+  └ 깃허브 프로젝트에 code 목록 중 http://이하 주소를 카피
+- 맨 뒤 점을 찍으면 현재폴더에 파일을 불러오고 찍지않으면 프로젝트 폴더를 만들어 생성한다.
+
+```bash
+git clone 깃허브주소
+git clone 깃허브주소 .
+
+git clone https://github.com/manew10006/til_git.git .
+```
