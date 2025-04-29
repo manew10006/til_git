@@ -448,3 +448,33 @@ git switch --track -c 생성브랜치명 원격브랜치명
 ```
 
 - 예: 'git switch --track -c jeju remotes/origin/jeju'
+  └ --track A B : 새로 생성하는 브랜치(A)가 원격 브랜치(B)와 연결되도록 설정
+  └ -c A: 새로운 브랜치(A)를 만듦
+
+## 6. 깃허브 브랜치 삭제하기
+
+- 깃허브의 브랜치 모두 내려받기
+
+```bash
+git fetch --all
+```
+
+- 로컬 및 깃허브 브랜치 목록 모두보기
+
+```bash
+git branch -a
+```
+
+- 깃허브의 브랜치 삭제하기
+
+```bash
+git push 저장소이름 --delete 브랜치이름
+```
+
+- 예: `git push origin --delete jeju`
+
+## 7. 가능하면 브랜치는 삭제하지 않기를 권장
+
+- 협업 시에는 잘 정리해가며...
+
+## 8. 가능하면 commit의 내용은 삭제, 수정하지 않기를 권장
