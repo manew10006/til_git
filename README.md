@@ -394,3 +394,16 @@ git clone 깃허브주소 .
 
 git clone https://github.com/manew10006/til_git.git .
 ```
+
+### 5.3. clone 이후의 작업
+
+```bash
+git status
+git branch -v
+git branch 새이름
+git branch 새이름
+작업진행
+git add .
+git commit -m "작업내용요약기록"
+git push origin 브랜치명
+```
